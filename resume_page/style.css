@@ -1,0 +1,23 @@
+h1 {
+  text-align: center;
+  font-family: Courier;
+}
+
+#profile {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+h3 {
+  color: red;
+}
+
+.info {
+  text-align: center;
+}
+
+ul {
+  width: 20%;
+  margin: auto;
+}
