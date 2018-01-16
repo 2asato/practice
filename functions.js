@@ -69,17 +69,4 @@
 // console.log(practice('Joni', 'Joni')
 // );
 
-// const palindrome = (str) => {
-//   let splitString = str.split('');
-//   console.log(splitString);
-//   let reverseString = splitString.reverse();
-//   console.log(reverseString);
-//   let joinString = reverseString.join('');
-//   console.log(joinString);
-//   if (str === joinString) {
-//     console.log(true);
-//   } else {
-//     console.log(false);
-//   }
-// }
-// palindrome('stats');
+atom
