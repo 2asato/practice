@@ -94,8 +94,8 @@
 // }
 // console.log(printLongestWord('BoJack', 'Princess', 'Diane', 'a', 'max', 'peanutbutter', 'big', 'todd'));
 
-const transmogrify = (num1, num2, num3) => {
-  let product = num1 * num2;
-  return Math.pow(product, num3);
-}
-console.log(transmogrify(5, 3, 2));
+// const transmogrify = (num1, num2, num3) => {
+//   let product = num1 * num2;
+//   return Math.pow(product, num3);
+// }
+// console.log(transmogrify(5, 3, 2));
