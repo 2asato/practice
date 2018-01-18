@@ -309,9 +309,9 @@ const momentum2 = (velocity, mass) => {
   return pluMo;
 }
 
-console.log(momentum(system.Jupiter.velocity, system.Jupiter.mass));
-console.log(jupMo);
-console.log(momentum2(system.Pluto.velocity, system.Pluto.mass));
-console.log(pluMo);
-let diff = jupMo - pluMo;
-console.log(diff);
+// console.log(momentum(system.Jupiter.velocity, system.Jupiter.mass));
+// console.log(jupMo);
+// console.log(momentum2(system.Pluto.velocity, system.Pluto.mass));
+// console.log(pluMo);
+// let diff = jupMo - pluMo;
+// console.log(diff);
