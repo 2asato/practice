@@ -153,3 +153,122 @@ const crazyObject = {
 // console.log(crazyObject.larry.characters[2].favouriteHobby);
 // console.log(crazyObject.larry.nicknames[1]);
 // console.log(crazyObject.larry.characters[1]);
+
+// const matt = {
+//     blink(){
+//         return ()=>{
+//             console.log('hi')
+//         }
+//     }
+// }
+// console.log(matt.blink()());
+
+// const asdfasdf = [
+//     true,
+//     false,
+//     ()=>{
+//         return {
+//             foo: 'some value'
+//         }
+//     },
+//     'apple'
+// ];
+// console.log(asdfasdf[2]().foo);
+
+// const list = [
+//     'dogs',
+//     false,
+//     3.5,
+//     ()=>{
+//         return {
+//             funStuff(){
+//                 console.log('yaaassss');
+//             }
+//         }
+//     }
+// ];
+// list[3]().funStuff();
+
+// const foo = [
+//     'asdfasdf',
+//     'matt',
+//     false,
+//     6,
+//     ()=>{
+//         return ()=>{
+//             console.log('yes!');
+//         }
+//     },
+//     {
+//         dog:'blue'
+//     }
+// ];
+// console.log(foo[4]()());
+
+// const foo = ()=>{
+//     console.log('I have been invoked!');
+// }
+// foo();
+
+// const foo = (param)=>{
+//     console.log(param);
+// }
+// foo();
+
+// const foo = (param, param2) => {
+//     param(param2);
+// }
+//
+// const bar = (param) => {
+//     console.log(param);
+// }
+//
+// foo(bar, 'hi');
+
+
+// const foo = {
+//     someMethod(callback){
+//         console.log('About to invoke the callback');
+//         callback();
+//     }
+// }
+//
+// const myFunc = ()=>{
+//     console.log('I have been called!');
+// }
+// foo.someMethod(myFunc);
+
+// const foo = {
+//     height:5,
+//     someMethod(callback){
+//         callback();
+//     }
+// }
+//
+// const myFunc = (param)=>{
+//     console.log(foo.height);
+// }
+// myFunc();
+
+// const shirtColor = {
+//   color: ["red", 'blue', 'green', 'white', 'pink'],
+// }
+// console.log(shirtColor.color.join());
+
+const wordReverse = (str) => {
+  let splitString = str.split('');
+  let reverseString = splitString.reverse();
+  let joined = reverseString.join('');
+  return joined;
+}
+console.log(wordReverse('hello'));
+
+const toUpperCase = (str) => {
+  return str.toUpperCase();
+}
+console.log(toUpperCase('aaron'));
+
+const repMaster = (str, func) => {
+  func(str) + ' proves that I am the rep MASTER'
+}
+console.log(repMaster('Never give your heart to a blockhead', wordReverse()));
