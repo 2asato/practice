@@ -255,20 +255,44 @@ const crazyObject = {
 // }
 // console.log(shirtColor.color.join());
 
-const wordReverse = (str) => {
-  let splitString = str.split('');
-  let reverseString = splitString.reverse();
-  let joined = reverseString.join('');
-  return joined;
-}
-console.log(wordReverse('hello'));
+// const wordReverse = (str) => {
+//   let splitString = str.split('');
+//   let reverseString = splitString.reverse();
+//   let joined = reverseString.join('');
+//   return joined;
+// }
+// console.log(wordReverse('hello'));
+//
+// const toUpperCase = (str) => {
+//   return str.toUpperCase();
+// }
+// console.log(toUpperCase('aaron'));
+//
+// const repMaster = (str, func) => {
+//   func(str) + ' proves that I am the rep MASTER'
+// }
+// console.log(repMaster('Never give your heart to a blockhead', wordReverse()));
 
-const toUpperCase = (str) => {
-  return str.toUpperCase();
-}
-console.log(toUpperCase('aaron'));
+// const sayIt = (str) => {
+//   console.log(str());;
+// }
+//
+// const holla = () => {
+//   console.log('hi');
+// }
+//
+// sayIt(holla);
 
-const repMaster = (str, func) => {
-  func(str) + ' proves that I am the rep MASTER'
+const bar = {
+    someMethod(param){
+        param();
+    }
 }
-console.log(repMaster('Never give your heart to a blockhead', wordReverse()));
+
+const foo = {
+    someMethod(){
+        console.log('this method was called');
+    }
+}
+
+foo.someMethod(); //fix this line
