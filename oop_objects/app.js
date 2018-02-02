@@ -20,3 +20,47 @@ const garcia = {
       hobby: 'Playing dope bass lines'
     }]
 }
+// console.log(garcia.albums[2]);
+// console.log(garcia.friends[0].name);
+// console.log(garcia.friends[2].hobby);
+// console.log(garcia.instruments[4]);
+
+// dot notation
+garcia.alive = true;
+// console.log(garcia.alive);
+
+// bracket notation
+garcia['quote'] = 'Everybody just be nice to each other';
+// console.log(garcia.quote);
+
+garcia.speak = () => {
+  console.log('Heyy, Thats a good song!');
+}
+// console.log(garcia);
+garcia.letsPlay = () => {
+  console.log('La daaa, da da, La daa, da da');
+}
+// console.log(garcia);
+
+const person = {
+  name: 'Charlie',
+  getName() {
+    return this.name;
+  }
+}
+// console.log(person.getName());
+
+// const taco = () => {
+//   console.log(this, ' this is with arrow functions');
+// }
+// taco();
+
+const game = {
+  start(){
+    const gameTimer = setInterval( () => {
+      console.log('hi', this)
+    }, 1000);
+  }
+}
+game.timer = 10;
+// console.log(game);
