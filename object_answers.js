@@ -59,18 +59,63 @@
 // console.log(stringCollector.collection);
 // stringCollector.admireCollection();
 
-const atm = {
-  totalCash: 200,
-  dispenseTwenties(twenties){
-    if (atm.totalCash >= twenties * 20) {
-      let total = twenties * 20;
-      return total;
-      atm.totalCash = atm.totalCash - total;
-      return atm.totalCash;
-    } else {
-      return null;
-    }
+// const atm = {
+//   totalCash: 200,
+//   dispenseTwenties(twenties){
+//     if (atm.totalCash >= twenties * 20) {
+//       let total = twenties * 20;
+//       return total;
+//     } else {
+//       return null;
+//     }
+//     atm.totalCash = atm.totalCash - total;
+//   }
+// }
+// console.log(atm.dispenseTwenties(5), atm.totalCash);
+// console.log(atm.totalCash);
+
+// const Leonardo = {
+//   name: 'Leonardo',
+//   color: 'blue',
+//   weapon: 'Katana',
+//   pizzaEaten: false,
+//   eatPizza(){
+//     if (Leonardo.pizzaEaten) {
+//       console.log('Leonardo has already eaten pizza');
+//       Leonardo.pizzaEaten = false;
+//     } else {
+//       console.log('Leonardo is eating pizza');
+//       Leonardo.pizzaEaten = true;
+//     }
+//   }
+// }
+// Leonardo.eatPizza();
+// console.log(Leonardo);
+// Leonardo.eatPizza();
+// console.log(Leonardo);
+// Leonardo.eatPizza();
+// console.log(Leonardo);
+
+const calculator = {
+  output: 0,
+  multiply(x, y){
+    calculator.output = x * y;
+    console.log(calculator.output);
+  },
+  divide(x, y){
+    calculator.output = x/y;
+    console.log(calculator.output);
+  },
+  add(x, y){
+    calculator.output = x + y;
+    console.log(calculator.output);
+  },
+  subtract(x, y){
+    calculator.output = x - y;
+    console.log(calculator.output);
   }
 }
-console.log(atm.dispenseTwenties(5));
-console.log(atm.totalCash);
+calculator.multiply(9, 8);
+calculator.divide(100, 10);
+calculator.add(99, 1);
+calculator.subtract(55, 33);
