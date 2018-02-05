@@ -198,4 +198,6 @@ for (let i = 0; i < bondFilms.length; i++) {
 }
 // console.log(oddBonds);
 bondFilms[0].gross.replace('$', '')
-console.log(bondFilms);
+
+const mlb = { alWest: ['Mariners', 'Angels', 'Astros', 'Athletics', 'Rangers']}
+console.log(mlb.alWest[0]);
