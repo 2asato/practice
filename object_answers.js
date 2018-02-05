@@ -96,26 +96,32 @@
 // Leonardo.eatPizza();
 // console.log(Leonardo);
 
-const calculator = {
-  output: 0,
-  multiply(x, y){
-    calculator.output = x * y;
-    console.log(calculator.output);
-  },
-  divide(x, y){
-    calculator.output = x/y;
-    console.log(calculator.output);
-  },
-  add(x, y){
-    calculator.output = x + y;
-    console.log(calculator.output);
-  },
-  subtract(x, y){
-    calculator.output = x - y;
-    console.log(calculator.output);
-  }
-}
-calculator.multiply(9, 8);
-calculator.divide(100, 10);
-calculator.add(99, 1);
-calculator.subtract(55, 33);
+// const calculator = {
+//   output: 0,
+//   multiply(x, y){
+//     calculator.output = x * y;
+//     console.log(calculator.output);
+//   },
+//   divide(x, y){
+//     calculator.output = x/y;
+//     console.log(calculator.output);
+//   },
+//   add(x, y){
+//     calculator.output = x + y;
+//     console.log(calculator.output);
+//   },
+//   subtract(x, y){
+//     calculator.output = x - y;
+//     console.log(calculator.output);
+//   }
+// }
+// calculator.multiply(9, 8);
+// calculator.divide(100, 10);
+// calculator.add(99, 1);
+// calculator.subtract(55, 33);
+
+const words = ["Ho", "Chi", "Minh", "City", "was", "once", "known", "as", "Prey", "Nokor"];
+
+const capitalizedWords = words.forEach((word) => {
+  console.log(word.toUpperCase());
+});
