@@ -42,19 +42,35 @@
 // greeter.goodbye('Teyo');
 // greeter.whoAreYou('Teyo');
 
-const stringCollector = {
-  collection: [],
-  collect(str){
-    const newString=str.split('').reverse().join('');
-    stringCollector.collection.push(newString);
-  },
-  admireCollection(){
-    for (i = 0; i < stringCollector.collection.length; i++) {
-      console.log(stringCollector.collection[i]);
+// const stringCollector = {
+//   collection: [],
+//   collect(str){
+//     const newString=str.split('').reverse().join('');
+//     stringCollector.collection.push(newString);
+//   },
+//   admireCollection(){
+//     for (i = 0; i < stringCollector.collection.length; i++) {
+//       console.log(stringCollector.collection[i]);
+//     }
+//   }
+// }
+// stringCollector.collect('hello');
+// stringCollector.collect('goodbye');
+// console.log(stringCollector.collection);
+// stringCollector.admireCollection();
+
+const atm = {
+  totalCash: 200,
+  dispenseTwenties(twenties){
+    if (atm.totalCash >= twenties * 20) {
+      let total = twenties * 20;
+      return total;
+      atm.totalCash = atm.totalCash - total;
+      return atm.totalCash;
+    } else {
+      return null;
     }
   }
 }
-stringCollector.collect('hello');
-stringCollector.collect('goodbye');
-console.log(stringCollector.collection);
-stringCollector.admireCollection();
+console.log(atm.dispenseTwenties(5));
+console.log(atm.totalCash);
