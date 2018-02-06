@@ -120,8 +120,15 @@
 // calculator.add(99, 1);
 // calculator.subtract(55, 33);
 
-const words = ["Ho", "Chi", "Minh", "City", "was", "once", "known", "as", "Prey", "Nokor"];
+// const words = ["Ho", "Chi", "Minh", "City", "was", "once", "known", "as", "Prey", "Nokor"];
+//
+// const capitalizedWords = words.forEach((word) => {
+//   console.log(word.toUpperCase());
+// });
 
-const capitalizedWords = words.forEach((word) => {
-  console.log(word.toUpperCase());
-});
+// const more_words = ["Joe", "Overeats", "Eggs"];
+//
+// const firstLetter = more_words.map((letter) => {
+//   return letter.charAt(0);
+// });
+// console.log(firstLetter);
