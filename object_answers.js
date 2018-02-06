@@ -132,3 +132,10 @@
 //   return letter.charAt(0);
 // });
 // console.log(firstLetter);
+
+const arr = [8, 8, 8, 8, 8, 8, 8, 8];
+
+const reduced = arr.reduce((sum, n) => {
+  return sum += n
+});
+console.log(reduced);
