@@ -133,9 +133,35 @@
 // });
 // console.log(firstLetter);
 
-const arr = [8, 8, 8, 8, 8, 8, 8, 8];
+// const arr = [8, 8, 8, 8, 8, 8, 8, 8];
+//
+// const reduced = arr.reduce((sum, n) => {
+//   return sum += n
+// });
+// console.log(reduced);
 
-const reduced = arr.reduce((sum, n) => {
-  return sum += n
-});
-console.log(reduced);
+const sheepShearers = [
+    {
+        name: "Tim",
+        age: 20,
+        sheepCount: 18
+    },
+    {
+        name: "C3PO",
+        age: 200,
+        sheepCount: 320
+    },
+    {
+        name: "Cousin It",
+        age: Infinity,
+        sheepCount: 2900
+    }
+];
+
+//iterates over sheepShearers array and returns just sheepCount into totalSheep array
+totalSheep = sheepShearers.map((shearer)=>{
+  return shearer.sheepCount;
+}).reduce((total, numberInArray) => {
+  return total + numberInArray;
+}, 0);
+console.log(totalSheep);
