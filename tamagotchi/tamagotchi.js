@@ -74,8 +74,22 @@ const player = {
 // player.medicateTamagotchi(tamagotchi1);
 // player.medicateTamagotchi(tamagotchi2);
 // player.knockOutTamagotchi(tamagotchi2);
-
+const start=()=>{
 const hungerTimer = setInterval(()=>{
   tamagotchi1.cry();
   tamagotchi2.cry();
+  if(tamagotchi1.foodInTummy === 0 || tamagotchi2.foodInTummy === 0)
+  clearInterval(hungerTimer);
 }, 6000);
+
+const yawnTimer = setInterval(()=>{
+  tamagotchi1.yawn();
+  tamagotchi2.yawn();
+}, 10000);
+
+const sickTimer = setInterval(()=>{
+  tamagotchi1.puke();
+  tamagotchi2.puke();
+}, 25000);
+};
+// start();
