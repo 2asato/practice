@@ -6,6 +6,10 @@ const tamagotchi1 = {
   health: 10,
   cry(){
     console.log('Waaaaa!!!!');
+  },
+  puke(){
+    console.log('Bleeeeh :0~~');
   }
 }
-tamagotchi1.cry();
+// tamagotchi1.cry();
+tamagotchi1.puke();
