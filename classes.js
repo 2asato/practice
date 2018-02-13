@@ -106,9 +106,83 @@ class Pet {
    }
  }
 
-const sparky = new Dog('Sparky', 10)
-sparky.setOwner('Bandit');
-sparky.bark();
-sparky.chaseTail();
-sparky.getPrice();
-console.log(sparky);
+// const sparky = new Dog('Sparky', 10)
+// sparky.setOwner('Bandit');
+// sparky.bark();
+// sparky.chaseTail();
+// sparky.getPrice();
+// console.log(sparky);
+
+class Cat extends Pet {
+  constructor(name, price) {
+    super(name);
+    this.price = price;
+  }
+  purr(){
+    console.log('purrrr');
+  }
+  clean(){
+    console.log('cleaning');
+  }
+  getPrice(){
+    return this.price;
+  }
+}
+const sprinkles = new Cat('Sprinkles', 5);
+// sprinkles.setOwner('Crazy Cat Lady');
+// sprinkles.purr();
+// sprinkles.clean();
+// sprinkles.getPrice();
+// console.log(sprinkles);
+
+class Person {
+  constructor(name){
+    this.name = name;
+    this.age = 0;
+    this.weight = 0;
+    this.mood = 0;
+    this.pets = [];
+    this.bankAccount = 0;
+  }
+  getName(){
+    return this.name;
+  }
+  getAge(){
+    return this.age;
+  }
+  getWeight(){
+    return this.weight;
+  }
+  greet(other_person){
+    console.log('Hi ' + other_person + '!');
+  }
+  eat(){
+    this.weight++;
+    this.mood++;
+  }
+  exercise(){
+    this.weight--;
+  }
+  birthday(){
+    this.age++;
+    this.weight++;
+    this.mood--;
+    this.bankAccount+=10;
+  }
+  buyPet(pet){
+    this.pets.push(pet);
+    this.mood+=10;
+    this.bankAccount = this.bankAccount - (pet.getPrice());
+  }
+}
+
+const aaron = new Person('Aaron');
+console.log(aaron.getName());
+console.log(aaron.getAge());
+console.log(aaron.getWeight());
+aaron.greet('Joni');
+aaron.eat();
+aaron.exercise();
+aaron.birthday();
+aaron.buyPet(sprinkles);
+console.log(aaron);
