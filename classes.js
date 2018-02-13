@@ -28,29 +28,87 @@
 
 /// console.log(superman);
 
-class Person {
-  constructor(name, age, eyes, hair) {
-    this.legs = 2;
-    this.arms = 2;
-    this.name = name;
-    this.age = age;
-    this.eyes = eyes;
-    this.hair = hair;
-  }
-};
+// class Person {
+//   constructor(name, age, eyes, hair) {
+//     this.legs = 2;
+//     this.arms = 2;
+//     this.name = name;
+//     this.age = age;
+//     this.eyes = eyes;
+//     this.hair = hair;
+//   }
+// };
+//
+// class Pet {
+//   constructor(type, name, age, owner) {
+//     this.type = type;
+//     this.name = name;
+//     this.age = age;
+//     this.owner = owner;
+//   }
+// };
+//
+// class Artist extends Person {
+//
+// }
+//
+// const cas = new Person ('Cas', 15, 'brown', 'brown')
+// console.log(cas);
+//
+// class Robots {
+//   constructor(serial) {
+//     this.serial = serial;
+//   }
+// };
+//
+// robotArr = [];
+//
+// const robotGenerator = () => {
+//   const newRobot = new Robots(robotArr.length);
+//   robotArr.push(newRobot);
+//   return newRobot;
+// }
+//
+// console.log(robotGenerator());
+// console.log(robotGenerator());
+// console.log(robotGenerator());
+// console.log(robotGenerator());
+// console.log(robotArr);
 
 class Pet {
-  constructor(type, name, age, owner) {
-    this.type = type;
+  constructor(name, owner) {
     this.name = name;
-    this.age = age;
     this.owner = owner;
   }
-};
+  setOwner(owner){
+    this.owner = owner;
+  }
+ }
 
-class Artist extends Person {
+ // const noodle = new Pet('Noodle')
+ // console.log(noodle);
+ // noodle.setOwner('Joni');
+ // console.log(noodle);
 
-}
+ class Dog extends Pet {
+   constructor(name, price) {
+     super(name);
+     this.price = price;
+   }
+   bark(){
+     console.log('bark');
+   }
+   chaseTail(){
+     console.log('oh boy oh boy oh boy');
+   }
+   getPrice(){
+     return this.price;
+   }
+ }
 
-const cas = new Person ('Cas', 15, 'brown', 'brown')
-console.log(cas);
+const sparky = new Dog('Sparky', 10)
+sparky.setOwner('Bandit');
+sparky.bark();
+sparky.chaseTail();
+sparky.getPrice();
+console.log(sparky);
