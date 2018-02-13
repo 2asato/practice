@@ -1,4 +1,15 @@
 class Person {
+        constructor(name, age, eyes, hair){
+          this.legs = 2;
+          this.arms = 2;
+          this.name = name;
+          this.age = age;
+          this.eyes = eyes;
+          this.hair = hair;
+        }
+        setHair(hairColor){
+          this.hair = hairColor;
+        }
         greet(otherPerson){
           console.log('hi ' + otherPerson + '!');
         }
@@ -6,11 +17,14 @@ class Person {
           console.log('weeee!');
         }
 };
-const me = new Person();
-me.greet('Teyo');
-me.jump();
-// const bob = new Person();
+
+class SuperHero extends Person {
+
+};
+
+// const me = new Person('Aaron', 36, 'brown', 'brown');
+// me.setHair('Pink');
 // console.log(me);
-// console.log(bob);
-// console.log(typeof(me));
-// console.log(typeof(bob));
+
+const superman = new SuperHero('Clark Kent', 30, 'blue', 'black')
+console.log(superman);
