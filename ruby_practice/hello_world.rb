@@ -82,3 +82,22 @@
 #
 # p add_two 3
 # p number
+
+# book = {
+#   title: 'The Great Gatsby',
+#   author: 'F Scott Fitzgerald',
+#   year: 1925
+# }
+#
+# p book
+
+# def shuffle_keys hash
+#   hash.keys.shuffle
+# end
+# p shuffle_keys name: "Timmy", age: 45
+
+# def return_num_and_hash num, hash
+# 	[num, hash]
+# end
+#
+# p return_num_and_hash 5, name: "Timmy", age: 45
