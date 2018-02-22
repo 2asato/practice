@@ -19,3 +19,28 @@
 #   p "#{hour}:#{minutes}"
 # end
 # convert_time 126
+
+# p "a man, a plan, a canal, frenemies!".reverse
+#
+# def swapEm
+#   a = 10
+#   b = 30
+#   temp = ""
+#   temp = b
+#   b = a
+#   a = temp
+#   p "a is now #{a}, and b is now #{b}"
+# end
+# swapEm
+
+# def fizzbuzzer x
+#   if x % 15 == 0
+#     p 'fizzbuzz'
+#   elsif x % 3 == 0
+#     p 'fizz'
+#   elsif x % 5 == 0
+#     p 'buzz'
+#   else p 'No fizz, no buzz, no fizzbuzz'
+#   end
+# end
+# fizzbuzzer 6
