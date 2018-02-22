@@ -19,9 +19,39 @@
 # end
 # p find_area 9, 4
 
-nums = [5, 5, 6, 7, 2, 4, 3, 2, 1, 9, 7, 6, 0, 0]
+# nums = [5, 5, 6, 7, 2, 4, 3, 2, 1, 9, 7, 6, 0, 0]
+#
+# def multiply_each_by_five arr
+#   arr.each {|x| p x * 5}
+# end
+# multiply_each_by_five nums
 
-def multiply_each_by_five arr
-  arr.each {|x| p x * 5}
-end
-multiply_each_by_five nums
+book = {
+  title: 'The Great Gatsby',
+  author: 'F Scott Fitzgerald',
+  year: 1925,
+  price: 10
+}
+
+lamp = {
+  type: 'reading',
+  brand: 'Ikea',
+  price: 25
+}
+
+table = {
+  type: 'bed side',
+  brand: 'Crate & Barrel',
+  color: 'birch',
+  price: 50
+}
+
+# def print_price hash
+#   p hash[:price]
+# end
+# print_price lamp
+
+# def print_item_sums hash1, hash2
+#   p hash1[:price] + hash2[:price]
+# end
+# print_item_sums table, lamp
