@@ -55,3 +55,13 @@ table = {
 #   p hash1[:price] + hash2[:price]
 # end
 # print_item_sums table, lamp
+
+# def check_if_prime num
+#   Prime.prime?(num)
+# end
+# check_if_prime 2
+
+def sum_of_multiples_3_5 maximum
+  (1...maximum).reduce(0) { |total,i| total + ((i % 3 == 0 || i % 5 == 0) ? i : 0)}
+end
+p sum_of_multiples_3_5 10
