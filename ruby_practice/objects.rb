@@ -22,8 +22,9 @@
 
 class World
 
-  def initialize
-    @name = "Panthalassa"
+  def initialize name, shape
+    @shape = shape
+    @name = name
     @people = []
   end
 
@@ -45,12 +46,22 @@ class World
 
 end
 
-world1 = World.new
+# world1 = World.new
+#
+# p world1.people
+#
+# world1.populate
+# world1.populate
+# world1.populate
+#
+# p world1.people
 
-p world1.people
+world1 = World.new "Panthalassa"
+world2 = World.new "Booger-town"
+world3 = World.new "Spiky hair ville"
+world4 = World.new "Frosted tips ville"
 
-world1.populate
-world1.populate
-world1.populate
-
-p world1.people
+p world1.name
+p world2.name
+p world3.name
+p world4.name
