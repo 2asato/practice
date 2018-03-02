@@ -45,42 +45,63 @@
 # p muppet1.name
 # p muppet1.color
 
-class Bird
+# class Bird
+#
+#   Species = ['Belted Kingfisher', 'Yellow-Billed Cuckoo', 'White-Cheeked Pintail', 'Cinnamon Teal', 'Lesser Scaup', 'Bufflehead', 'Common Goldeneye', 'Fulvous Whistling Duck', 'Hooded Merganser', 'White-Winged Scoter', 'Chimney Swift', 'Rufous Hummingbird', 'Chuck-Wills-Widow', 'Whip-Poor-Will', 'Albatross', 'Ruddy Turnstone', 'Piping Plover', 'Killdeer', 'Laughing Gull', 'Marbled Godwit', 'Least Tern', 'New World Warbler']
+#
+#   def initialize adjective, name
+#     p "#{name} is a(n) #{adjective} bird!"
+#     @name = name
+#     @adjective = adjective
+#     @species = Species.sample
+#   end
+#
+#   def adjective
+#     @adjective
+#   end
+#
+#   def name
+#     @name
+#   end
+#
+#   def species
+#     @species
+#   end
+#
+#   def honk
+#     p "#{name} is making a honking sound!"
+#   end
+#
+#   def flail
+#     p "#{name} is flailing its arms!"
+#   end
+#
+# end
+#
+# bird1 = Bird.new "big", "Big Bird"
+# p bird1
+# bird1.honk
+# bird1.flail
+# p bird1.adjective
+# p bird1.name
 
-  Species = ['Belted Kingfisher', 'Yellow-Billed Cuckoo', 'White-Cheeked Pintail', 'Cinnamon Teal', 'Lesser Scaup', 'Bufflehead', 'Common Goldeneye', 'Fulvous Whistling Duck', 'Hooded Merganser', 'White-Winged Scoter', 'Chimney Swift', 'Rufous Hummingbird', 'Chuck-Wills-Widow', 'Whip-Poor-Will', 'Albatross', 'Ruddy Turnstone', 'Piping Plover', 'Killdeer', 'Laughing Gull', 'Marbled Godwit', 'Least Tern', 'New World Warbler']
+class Person
 
-  def initialize adjective, name
-    p "#{name} is a(n) #{adjective} bird!"
+  def initialize name, age
+    p "#{name} is #{age} years old."
     @name = name
-    @adjective = adjective
-    @species = Species.sample
-  end
-
-  def adjective
-    @adjective
+    @age = age
   end
 
   def name
     @name
   end
 
-  def species
-    @species
-  end
-
-  def honk
-    p "#{name} is making a honking sound!"
-  end
-
-  def flail
-    p "#{name} is flailing its arms!"
+  def age
+    @age
   end
 
 end
 
-bird1 = Bird.new "big", "Big Bird"
-p bird1
-bird1.honk
-bird1.flail
-p bird1.adjective
-p bird1.name
+person1 = Person.new "Teyo", 5
+p person1
