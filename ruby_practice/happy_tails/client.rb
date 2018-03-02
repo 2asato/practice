@@ -14,6 +14,6 @@ class Client
 
 end
 
-client1 = Client.new "Joni", "Shoreline"
-client1.get_pet "Noodle"
-p client1
+# client1 = Client.new "Joni", "Shoreline"
+# client1.get_pet "Noodle"
+# p client1
