@@ -20,27 +20,55 @@
 #   end
 # end
 
-class Muppet
+# class Muppet
+#
+#   Color = ["red", "blue", "green", "orange"]
+#   def initialize name
+#     p "This muppet is called #{name}!"
+#     @name = name
+#     @color = Color.sample
+#   end
+#
+#   def name
+#     @name
+#   end
+#
+#   def color
+#     @color
+#   end
+#
+#
+# end
+#
+# muppet1 = Muppet.new "Fonzy"
+# p muppet1
+# p muppet1.name
+# p muppet1.color
 
-  Color = ["red", "blue", "green", "orange"]
-  def initialize name
-    p "This muppet is called #{name}!"
+class Bird
+
+  Species = ['Belted Kingfisher', 'Yellow-Billed Cuckoo', 'White-Cheeked Pintail', 'Cinnamon Teal', 'Lesser Scaup', 'Bufflehead', 'Common Goldeneye', 'Fulvous Whistling Duck', 'Hooded Merganser', 'White-Winged Scoter', 'Chimney Swift', 'Rufous Hummingbird', 'Chuck-Wills-Widow', 'Whip-Poor-Will', 'Albatross', 'Ruddy Turnstone', 'Piping Plover', 'Killdeer', 'Laughing Gull', 'Marbled Godwit', 'Least Tern', 'New World Warbler']
+
+  def initialize adjective, name
+    p "#{name} is a(n) #{adjective} bird!"
     @name = name
-    @color = Color.sample
+    @adjective = adjective
+    @species = Species.sample
+  end
+
+  def adjective
+    @adjective
   end
 
   def name
     @name
   end
 
-  def color
-    @color
+  def species
+    @species
   end
-
 
 end
 
-muppet1 = Muppet.new "Fonzy"
-p muppet1
-p muppet1.name
-p muppet1.color
+bird1 = Bird.new "big", "Big Bird"
+p bird1
