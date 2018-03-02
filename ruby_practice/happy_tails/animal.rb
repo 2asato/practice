@@ -1,27 +1,21 @@
 class Animal
 
-  Toy = ["bone", "ball", "rope", "squeak toy"]
+  attr_accessor :name, :species, :toy
 
   def initialize name, species
     @name = name
     @species = species
-    @toy = Toy.sample
+    @toys = []
   end
 
-  def name
-    @name
-  end
-
-  def species
-    @species
-  end
-
-  def toy
-    @toy
+  def get_toy toy
+    @toys << toy
   end
 
 end
 
 animal1 = Animal.new "Stripes", "Zebra"
-p animal1
 p animal1.name
+animal1.get_toy "bone"
+animal1.get_toy "rope"
+p animal1
