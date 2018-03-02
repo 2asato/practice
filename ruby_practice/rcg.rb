@@ -68,7 +68,19 @@ class Bird
     @species
   end
 
+  def honk
+    p "#{name} is making a honking sound!"
+  end
+
+  def flail
+    p "#{name} is flailing its arms!"
+  end
+
 end
 
 bird1 = Bird.new "big", "Big Bird"
 p bird1
+bird1.honk
+bird1.flail
+p bird1.adjective
+p bird1.name
