@@ -40,10 +40,10 @@ class World
     @name = value
   end
 
-  def populate
-    @people << { name: "Lumpy", age: 20 }
+  def populate name, age
+    @people << { name: name, age: age }
   end
-
+  
 end
 
 # world1 = World.new
@@ -56,12 +56,10 @@ end
 #
 # p world1.people
 
-world1 = World.new "Panthalassa"
-world2 = World.new "Booger-town"
+# world1 = World.new "Panthalassa"
+# world2 = World.new "Booger-town"
 world3 = World.new "Spiky hair ville"
-world4 = World.new "Frosted tips ville"
+# world4 = World.new "Frosted tips ville"
 
-p world1.name
-p world2.name
-p world3.name
-p world4.name
+world3.populate "Bart Simpson", 10
+p world3.people
