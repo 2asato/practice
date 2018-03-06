@@ -4,6 +4,14 @@ require_relative "shelter"
 
 shelter = Shelter.new "Happy Tails"
 
+animal1 = Animal.new "Noodle", "Dog"
+animal2 = Animal.new "Cleo", "Dog"
+animal3 = Animal.new "Millie", "Dog"
+
+client1 = Client.new "Joni", "Shoreline"
+client2 = Client.new "Adam", "Shoreline"
+client3 = Client.new "Bella", "Burien"
+
 loop do
   puts "Welcome to Happy Tails!"
   puts "Please choose one of the following..."
