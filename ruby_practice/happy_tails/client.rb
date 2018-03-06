@@ -1,10 +1,10 @@
 class Client
 
-  attr_accessor :name, :residence, :pet
+  attr_accessor :name, :city, :pet
 
-  def initialize name, residence
+  def initialize name, city
     @name = name
-    @residence = residence
+    @city = city
     @pets = []
   end
 

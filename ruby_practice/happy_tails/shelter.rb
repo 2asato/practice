@@ -8,6 +8,14 @@ class Shelter
     @clients = []
   end
 
+  def add_animal animal
+    @animals << animal
+  end
+
+  def add_client client
+    @clients << client
+  end
+
   def adoption animal
     @clients << animal
   end
