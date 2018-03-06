@@ -14,8 +14,8 @@ class Animal
 
 end
 
-animal1 = Animal.new "Stripes", "Zebra"
-p animal1.name
-animal1.get_toy "bone"
-animal1.get_toy "rope"
-p animal1
+# animal1 = Animal.new "Stripes", "Zebra"
+# p animal1.name
+# animal1.get_toy "bone"
+# animal1.g_toy "rope"
+# p animal1
