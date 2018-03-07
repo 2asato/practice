@@ -103,5 +103,20 @@ class Person
 
 end
 
+class World
+  People = []
+  def name
+    'Panthalassa'
+  end
+
+  def populate
+    People.push(Person)
+  end
+
+end
+
 person1 = Person.new "Teyo", 5
+
 p person1
+
+p People

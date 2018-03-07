@@ -17,7 +17,6 @@ client2 = Client.new "Adam", "Shoreline"
 shelter.add_client client2
 client3 = Client.new "Bella", "Burien"
 shelter.add_client client3
-
 loop do
   puts "Welcome to Happy Tails!"
   puts "Please choose one of the following..."
