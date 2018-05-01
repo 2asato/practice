@@ -13,3 +13,8 @@ body {
   background-color: lightgreen;
   color: brown;
 }
+
+#btnClr, #btnEql {
+  background-color: darkgreen;
+  color: white;
+}
