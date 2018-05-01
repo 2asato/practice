@@ -7,3 +7,9 @@ document.getElementById('btn0').addEventListener('click', function() {
 document.getElementById('btn1').addEventListener('click', function() {
   document.getElementById('res').insertAdjacentHTML('beforeend', '1')
 });
+
+// clears 'res' box
+document.getElementById('btnClr').onclick = function()
+{
+    (document.getElementById('res').innerHTML) = "";
+};
