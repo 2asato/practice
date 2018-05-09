@@ -6,9 +6,16 @@ console.log('hello world');
 const App = () => {
   return (
     <div>
-      <header>...</header>
-      <main>...</main>
-      <footer>...</footer>
+      <header>
+        <h1>Website</h1>
+      </header>
+      <main>
+        <h2>I am Bib Fortuna</h2>
+        <img src="https://i.pinimg.com/236x/86/9b/6d/869b6d02226dfdd4b0ddc49086417f13--jabbas-palace-bibs.jpg"/>
+      </main>
+      <footer>
+        <small>Die wanna wanga</small>
+      </footer>
     </div>
   )
 }
