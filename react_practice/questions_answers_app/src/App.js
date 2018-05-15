@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Questions from './Questions'
 
 class App extends Component {
 
@@ -13,13 +14,16 @@ class App extends Component {
   componentDidMount() {
     fetch('http://jservice.io/api/random?count=10')
     .then(response => response.json())
-    .then(json => console.log(json))
+    .then(json => {
+      console.log(json)
+      this.setState({ allQuestions: json })
+    })
     .catch(err => console.log(err))
   }
 
   render() {
     return (
-      <div></div>
+      <Questions />
     );
   }
 }
