@@ -21,10 +21,15 @@ class App extends Component {
     .catch(err => console.log(err))
   }
 
+  showAnswer(answer) {
+    console.log(answer);
+  }
+
   render() {
     return (
       <Questions
-        allQuestions={ this.state.allQuestions}
+        allQuestions={ this.state.allQuestions }
+        showAnswer={ this.showAnswer }
       />
     );
   }

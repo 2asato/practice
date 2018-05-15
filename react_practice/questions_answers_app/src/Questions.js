@@ -5,7 +5,7 @@ const Questions = (props) => {
 
   const questionList = props.allQuestions.map(item => {
     return (
-      <p>
+      <p onClick={ () => props.showAnswer(item.answer) }>
         { item.question }
       </p>
     )
