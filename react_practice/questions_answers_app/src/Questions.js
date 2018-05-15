@@ -1,8 +1,20 @@
 import React from 'react';
 
-const Questions = () => {
+const Questions = (props) => {
+  console.log('props coming in to Questions: ', props);
+
+  const questionList = props.allQuestions.map(item => {
+    return (
+      <p>
+        { item.question }
+      </p>
+    )
+  })
+
   return (
-    <div>hi</div>
+    <div>
+      { questionList }
+    </div>
   )
 }
 
