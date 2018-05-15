@@ -3,6 +3,13 @@ import './App.css';
 
 class App extends Component {
 
+  constructor() {
+    super()
+    this.state = {
+      allQuestions: []
+    }
+  }
+
   componentDidMount() {
     fetch('http://jservice.io/api/random?count=10')
     .then(response => response.json())
