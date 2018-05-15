@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
 import Questions from './Questions.js'
+import Answer from './Answer.js'
 
 class App extends Component {
 
   constructor() {
     super()
     this.state = {
-      allQuestions: []
+      allQuestions: [],
+      currentAnswer: null
     }
   }
 
@@ -23,13 +25,24 @@ class App extends Component {
 
   showAnswer(answer) {
     console.log(answer);
+    console.log('this in showAnswer: ', this)
+    this.setState({
+      currentAnswer: answer
+    }, () => console.log(this.state));
   }
 
   render() {
+    if (this.state.currentAnswer) {
+      return (
+        <Answer
+          currentAnswer={ this.state.currentAnswer }
+        />
+      )
+    }
     return (
       <Questions
         allQuestions={ this.state.allQuestions }
-        showAnswer={ this.showAnswer }
+        showAnswer={ this.showAnswer.bind(this) }
       />
     );
   }
