@@ -31,20 +31,28 @@ class App extends Component {
     }, () => console.log(this.state));
   }
 
+  showQuestions() {
+    this.setState({
+      currentAnswer: null
+    })
+  }
+
   render() {
     if (this.state.currentAnswer) {
       return (
         <Answer
           currentAnswer={ this.state.currentAnswer }
+          showQuestions={ this.showQuestions.bind(this) }
         />
       )
-    }
+    } else {
     return (
       <Questions
         allQuestions={ this.state.allQuestions }
         showAnswer={ this.showAnswer.bind(this) }
-      />
-    );
+        />
+      );
+    }
   }
 }
 
