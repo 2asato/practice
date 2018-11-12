@@ -2,6 +2,10 @@
   background:#F97300;
 }
 
+/*.bg-dark{
+background-color:#343a40!important
+}*/
+
 .nav-link , .navbar-brand {
   color: #f4f4f4; cursor: pointer;
 }
