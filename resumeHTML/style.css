@@ -64,5 +64,13 @@ body {
     font-size: 1vw;
 }
 
+.project p{
+    font-size: 1vw;
+}
+
+.projectTitle {
+    text-decoration-line: underline
+}
+
 
 
