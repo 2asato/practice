@@ -1,3 +1,11 @@
 body {
-    margin: 0 50px;
+    margin: 10px 50px;
+}
+
+li {
+    display: inline;
+}
+
+#contactList {
+    list-style-type: none;
 }
