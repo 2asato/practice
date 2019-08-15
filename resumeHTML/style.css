@@ -1,5 +1,18 @@
 body {
     margin: 10px 50px;
+    font-family: 'Arimo', sans-serif;
+}
+
+h1 {
+    font-size: 3vw;
+}
+
+h2 {
+    font-size: 2.5vw;
+}
+
+hr {
+    margin-top: 0;
 }
 
 .headers {
@@ -23,8 +36,20 @@ body {
 }
 
 #aboutMe {
-    margin: 40px 0 0 0;
+    margin: 30px 0 -20px 0;
     font-size: 1.2vw;
+    font-family: 'Muli', sans-serif;
+    font-weight: lighter;
+}
+
+li {
+    font-family: 'Muli', sans-serif;
+    font-weight: lighter;
+}
+
+b {
+    font-family: 'Arimo', sans-serif;
+    font-weight: 900;
 }
 
 .section {
@@ -69,12 +94,20 @@ body {
 }
 
 .projectTitle {
-    text-decoration-line: underline
+    text-decoration-line: underline;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 900;
 }
 
 .school {
     font-size: 1.2vw;
     margin-bottom: 1px;
+}
+
+.school {
+    font-family: 'Muli', sans-serif;
+    font-weight: lighter;
+    font-size: 1vw;
 }
 
 
