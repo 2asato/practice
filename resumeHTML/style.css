@@ -2,6 +2,10 @@ body {
     margin: 10px 50px;
 }
 
+h1 {
+    margin-bottom: 0;
+}
+
 #contactList {
     display: flex;
     align-items: stretch;
@@ -16,5 +20,9 @@ body {
     list-style-type: none;
     flex: 0 1 auto;
     font-size: 1.5vw;
+}
+
+#aboutMe {
+    margin: 40px 0;
 }
 
