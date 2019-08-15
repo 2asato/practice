@@ -2,10 +2,19 @@ body {
     margin: 10px 50px;
 }
 
-li {
-    display: inline;
+#contactList {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-#contactList {
+#contactList li {
+    display: block;
     list-style-type: none;
+    flex: 0 1 auto;
+    font-size: 1.5vw;
 }
+
