@@ -2,7 +2,7 @@ body {
     margin: 10px 50px;
 }
 
-h1 {
+.headers {
     margin-bottom: 0;
 }
 
@@ -24,5 +24,15 @@ h1 {
 
 #aboutMe {
     margin: 40px 0;
+    font-size: 1.2vw;
+}
+
+#skillsList {
+    padding-left: 0;
+}
+
+#skillsList li{
+    list-style-type: none;
+    font-size: 1.2vw;
 }
 
